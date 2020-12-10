@@ -1,4 +1,4 @@
-package org.launchcode.java.demos.lsn4classes2;
+package org.launchcode.java.demos.lsn3classes1.school;
 import java.util.HashMap;
 import java.util.Objects;
 
