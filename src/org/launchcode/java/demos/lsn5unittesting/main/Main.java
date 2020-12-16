@@ -5,5 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Car car = new Car("Toyota", "Prius", 10, 50);
         System.out.println(car.getMake() + " - " + car.getModel());
+
+
+        car.drive(10000);
+        System.out.println(car.getOdometer());
+        System.out.println(car.getGasTankLevel());
     }
 }

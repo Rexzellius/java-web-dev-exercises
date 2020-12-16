@@ -1,7 +1,7 @@
 package studios;
 
 import java.time.*;
-
+// there is a better option than making category a string
 public class MenuItem {
     private String name;
     private double price = 0.0;
@@ -15,24 +15,24 @@ public class MenuItem {
         this.price = price;
         this.description = description;
         this.category = category;
-        this.isNew = isNew;
-        this.lastUpdated = lastUpdated;
+        this.isNew = true;
+        this.lastUpdated = LocalDate.now();
     }
     // setters
-    protected void setName(String aName){
-        name = aName;
+    protected void setName(String name){
+        this.name = name;
     }
-    protected void setPrice(double aPrice){
-        price = aPrice;
+    protected void setPrice(double price){
+        this.price = price;
     }
-    protected void setDescription(String aDescription){
-        description = aDescription;
+    protected void setDescription(String description){
+        this.description = description;
     }
-    protected void setCategory(String aCategory){
-        category = aCategory;
+    protected void setCategory(String category){
+        this.category = category;
     }
     protected void setIsNew(boolean newItem){
-        isNew = newItem;
+        this.isNew = !this.isNew;
     }
 
     //getters
